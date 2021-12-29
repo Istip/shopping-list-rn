@@ -34,7 +34,7 @@ export default function App() {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Shopping list</Text>
-      <Form />
+      <Form list={list} setList={setList} getTodos={getTodos} />
       <List list={list} getTodos={getTodos} />
       <StatusBar style="auto" />
     </View>
